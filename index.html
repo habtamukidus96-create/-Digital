@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W/D™ | Washa Digital Services</title>
+    <title>ዋሻ Digital™ | Washa Digital Services</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for Icons -->
@@ -36,75 +36,57 @@
 </head>
 <body class="bg-caveDark text-gray-300 font-sans antialiased selection:bg-cyberBlue selection:text-caveDark relative overflow-x-hidden">
 
-    <!-- Header & Navbar Section -->
+    <!-- Header & Navbar (Desktop Layout Kept Across All Screens) -->
     <header class="fixed top-0 w-full bg-caveDark/90 backdrop-blur-md border-b border-gray-900 z-40">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Brand Identity & Logo Element -->
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-gradient-to-br from-cyberBlue via-blue-600 to-treasureGreen rounded-xl flex items-center justify-center shadow-lg shadow-cyberBlue/10">
-                    <i class="fa-solid fa-code text-caveDark text-sm font-black"></i>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            <!-- Brand Identity & Updated Logo Element -->
+            <div class="flex items-center space-x-2">
+                <div class="w-9 h-9 bg-gradient-to-br from-cyberBlue via-blue-600 to-treasureGreen rounded-xl flex items-center justify-center shadow-lg shadow-cyberBlue/10">
+                    <i class="fa-solid fa-code text-caveDark text-xs font-black"></i>
                 </div>
-                <span class="text-xl font-black tracking-tighter text-white uppercase">W/D<span class="text-cyberBlue text-xs font-bold tracking-normal lowercase p-0.5">™</span></span>
+                <span class="text-base sm:text-lg font-black tracking-tighter text-white">ዋሻ <span class="text-cyberBlue font-bold tracking-normal">Digital</span><span class="text-gray-500 text-[10px] font-normal lowercase p-0.5">™</span></span>
             </div>
             
-            <!-- Hamburger Menu Button -->
-            <button onclick="toggleMenu()" class="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-900 border border-gray-800 text-white hover:text-cyberBlue transition focus:outline-none">
-                <i id="hamburger-icon" class="fa-solid fa-bars text-lg"></i>
-            </button>
+            <!-- Links display inline horizontally on all screen widths -->
+            <nav class="flex space-x-3 sm:space-x-6 text-xs sm:text-sm font-medium text-gray-400">
+                <a href="#home" class="hover:text-cyberBlue transition">Home</a>
+                <a href="#about" class="hover:text-cyberBlue transition">About</a>
+                <a href="#services" class="hover:text-cyberBlue transition">Services</a>
+                <a href="#services" class="hover:text-cyberBlue transition">Pricing</a>
+                <a href="#contact" class="hover:text-cyberBlue transition">Contact</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Side Slide Hamburger Navigation Menu -->
-    <div id="side-menu" class="fixed top-0 right-0 h-full w-80 bg-gray-950/95 border-l border-gray-900 backdrop-blur-xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out p-8 flex flex-col justify-between">
-        <div>
-            <div class="flex justify-between items-center pb-8 border-b border-gray-900">
-                <span class="text-sm font-bold text-gray-500 uppercase tracking-widest">Navigation Menu</span>
-                <button onclick="toggleMenu()" class="text-gray-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
-            </div>
-            <nav class="mt-8 flex flex-col space-y-6 text-lg font-bold text-white">
-                <a href="#home" onclick="toggleMenu()" class="hover:text-cyberBlue transition flex items-center"><i class="fa-solid fa-house w-8 text-sm text-gray-600"></i> Home</a>
-                <a href="#about" onclick="toggleMenu()" class="hover:text-cyberBlue transition flex items-center"><i class="fa-solid fa-circle-info w-8 text-sm text-gray-600"></i> About Us</a>
-                <a href="#services" onclick="toggleMenu()" class="hover:text-cyberBlue transition flex items-center"><i class="fa-solid fa-layer-group w-8 text-sm text-gray-600"></i> Services</a>
-                <a href="#services" onclick="toggleMenu()" class="hover:text-cyberBlue transition flex items-center"><i class="fa-solid fa-tags w-8 text-sm text-gray-600"></i> Pricing</a>
-                <a href="#contact" onclick="toggleMenu()" class="hover:text-cyberBlue transition flex items-center"><i class="fa-solid fa-paper-plane w-8 text-sm text-gray-600"></i> Contact Us</a>
-            </nav>
-        </div>
-        <div class="border-t border-gray-900 pt-6">
-            <a href="https://t.me/your_telegram_username" target="_blank" class="w-full bg-gray-900 border border-gray-800 py-3 rounded-xl block text-center font-bold text-sm text-cyberBlue hover:bg-gray-850 transition">
-                <i class="fa-brands fa-telegram mr-2"></i> Direct Telegram Chat
-            </a>
-        </div>
-    </div>
-
     <!-- Home Section -->
-    <section id="home" class="pt-44 pb-16 px-6 max-w-7xl mx-auto text-center relative">
+    <section id="home" class="pt-36 pb-16 px-4 sm:px-6 max-w-7xl mx-auto text-center relative">
         <div class="absolute top-12 left-1/2 -translate-x-1/2 w-96 h-96 bg-cyberBlue/5 rounded-full blur-3xl pointer-events-none"></div>
         
         <p class="text-cyberBlue font-semibold uppercase tracking-widest text-xs mb-3">— Professional Solutions —</p>
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight max-w-4xl mx-auto leading-tight">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight max-w-4xl mx-auto leading-tight">
             High-Performance Web & <br>
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyberBlue via-blue-400 to-treasureGreen">Digital Growth</span>
         </h1>
-        <p class="mt-4 text-gray-400 max-w-xl mx-auto text-sm md:text-base">
+        <p class="mt-4 text-gray-400 max-w-xl mx-auto text-xs sm:text-base">
             Modern Layout for Startups, Corporate Companies, and Premium Real Estate Brands.
         </p>
 
-        <!-- Mockup Display Section with Redesigned Vector Chart -->
+        <!-- Mockup Display with Desktop Dashboard Style -->
         <div class="mt-12 max-w-4xl mx-auto relative">
             <div class="relative bg-gradient-to-b from-gray-900 to-caveCard border border-gray-800 rounded-xl p-4 shadow-2xl glow-effect">
-                <div class="bg-caveDark/60 p-6 md:p-8 rounded-lg text-left border border-gray-800/40">
-                    <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
-                        <div class="md:col-span-3">
+                <div class="bg-caveDark/60 p-4 sm:p-8 rounded-lg text-left border border-gray-800/40">
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="flex-1">
                             <span class="text-xs text-cyberBlue font-bold tracking-wider">@WashaDigital</span>
-                            <h3 class="text-2xl md:text-3xl font-black text-white mt-1">Grow Your Business Online</h3>
+                            <h3 class="text-xl sm:text-3xl font-black text-white mt-1">Grow Your Business Online</h3>
                             <p class="text-gray-400 text-xs mt-2 leading-relaxed">We deliver innovative digital infrastructure that automatically captures leads and closes marketplace deals.</p>
                             <div class="mt-4">
                                 <span class="bg-treasureGreen/10 text-treasureGreen text-[10px] font-bold px-2.5 py-1 rounded border border-treasureGreen/20">+ 68% Conversion Rate</span>
                             </div>
                         </div>
                         
-                        <!-- Beautiful Vector Data Chart -->
-                        <div class="md:col-span-2 bg-gray-950 p-5 rounded-xl border border-gray-800 flex flex-col justify-between h-44 shadow-inner">
+                        <!-- Vector Data Chart -->
+                        <div class="w-full md:w-72 bg-gray-950 p-5 rounded-xl border border-gray-800 flex flex-col justify-between h-44 shadow-inner">
                             <div class="flex justify-between items-center mb-2">
                                 <div>
                                     <span class="text-[10px] text-gray-500 uppercase font-bold tracking-wider block">Lead Flow Velocity</span>
@@ -130,51 +112,51 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-24 bg-gray-950/50 border-t border-b border-gray-900 px-6">
+    <section id="about" class="py-24 bg-gray-950/50 border-t border-b border-gray-900 px-4 sm:px-6">
         <div class="max-w-4xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div>
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="flex-1">
                     <span class="text-xs text-treasureGreen font-bold tracking-widest uppercase block mb-2">// Behind the Cave</span>
-                    <h2 class="text-3xl font-extrabold text-white">About Us</h2>
-                    <p class="text-gray-400 text-sm mt-4 leading-relaxed">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">About Us</h2>
+                    <p class="text-gray-400 text-xs sm:text-sm mt-4 leading-relaxed">
                         Like a cave ("ዋሻ"), we serve as a solid, deep, and secure foundation where businesses refine their models and uncover hidden strategies to dominate the online marketplace. 
                     </p>
-                    <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                    <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
                         We blend software engineering precision with aggressive performance marketing frameworks to build systems that capture revenue around the clock.
                     </p>
                 </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-caveCard p-5 rounded-xl border border-gray-800 text-center">
-                        <div class="text-2xl font-black text-white">100%</div>
-                        <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-1">Responsive Design</div>
+                <div class="grid grid-cols-2 gap-4 w-full md:w-auto shrink-0">
+                    <div class="bg-caveCard p-4 rounded-xl border border-gray-800 text-center w-full md:w-32">
+                        <div class="text-xl font-black text-white">100%</div>
+                        <div class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Responsive</div>
                     </div>
-                    <div class="bg-caveCard p-5 rounded-xl border border-gray-800 text-center">
-                        <div class="text-2xl font-black text-cyberBlue">24/7</div>
-                        <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-1">Automated Funnels</div>
+                    <div class="bg-caveCard p-4 rounded-xl border border-gray-800 text-center w-full md:w-32">
+                        <div class="text-xl font-black text-cyberBlue">24/7</div>
+                        <div class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Automation</div>
                     </div>
-                    <div class="bg-caveCard p-5 rounded-xl border border-gray-800 text-center">
-                        <div class="text-2xl font-black text-treasureGreen">ROI</div>
-                        <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-1">Focused Strategy</div>
+                    <div class="bg-caveCard p-4 rounded-xl border border-gray-800 text-center w-full md:w-32">
+                        <div class="text-xl font-black text-treasureGreen">ROI</div>
+                        <div class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Focused</div>
                     </div>
-                    <div class="bg-caveCard p-5 rounded-xl border border-gray-800 text-center">
-                        <div class="text-2xl font-black text-white">Direct</div>
-                        <div class="text-[10px] text-gray-500 tracking-wider mt-1">Telegram Flow</div>
+                    <div class="bg-caveCard p-4 rounded-xl border border-gray-800 text-center w-full md:w-32">
+                        <div class="text-xl font-black text-white">Direct</div>
+                        <div class="text-[9px] text-gray-500 tracking-wider mt-1">Telegram</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services & Pricing Section (Pressable to Show Prices) -->
-    <section id="services" class="py-24 px-6 max-w-6xl mx-auto">
+    <!-- Services & Pricing Section -->
+    <section id="services" class="py-24 px-4 sm:px-6 max-w-6xl mx-auto">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-extrabold text-white">Services & Pricing</h2>
-            <p class="text-gray-500 text-sm mt-2">Click any core card below to view detailed deliverables and pricing frameworks instantly.</p>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Services & Pricing</h2>
+            <p class="text-gray-500 text-xs sm:text-sm mt-2">Click any core card below to view detailed deliverables and pricing frameworks instantly.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Service Card 1 -->
-            <button onclick="openModal('web-modal')" class="glass-card p-8 rounded-2xl text-left border border-gray-800 hover:border-cyberBlue/40 transition duration-300 block w-full focus:outline-none group">
+            <button onclick="openModal('web-modal')" class="glass-card p-6 sm:p-8 rounded-2xl text-left border border-gray-800 hover:border-cyberBlue/40 transition duration-300 block w-full focus:outline-none group">
                 <div class="w-12 h-12 bg-cyberBlue/10 flex items-center justify-center rounded-xl text-cyberBlue mb-6 group-hover:bg-cyberBlue group-hover:text-caveDark transition duration-300">
                     <i class="fa-solid fa-code text-lg"></i>
                 </div>
@@ -184,7 +166,7 @@
             </button>
 
             <!-- Service Card 2 -->
-            <button onclick="openModal('ads-modal')" class="glass-card p-8 rounded-2xl text-left border border-gray-800 hover:border-treasureGreen/40 transition duration-300 block w-full focus:outline-none group">
+            <button onclick="openModal('ads-modal')" class="glass-card p-6 sm:p-8 rounded-2xl text-left border border-gray-800 hover:border-treasureGreen/40 transition duration-300 block w-full focus:outline-none group">
                 <div class="w-12 h-12 bg-treasureGreen/10 flex items-center justify-center rounded-xl text-treasureGreen mb-6 group-hover:bg-treasureGreen group-hover:text-caveDark transition duration-300">
                     <i class="fa-solid fa-rectangle-ad text-lg"></i>
                 </div>
@@ -194,7 +176,7 @@
             </button>
 
             <!-- Service Card 3 -->
-            <button onclick="openModal('smm-modal')" class="glass-card p-8 rounded-2xl text-left border border-gray-800 hover:border-purple-400/40 transition duration-300 block w-full focus:outline-none group">
+            <button onclick="openModal('smm-modal')" class="glass-card p-6 sm:p-8 rounded-2xl text-left border border-gray-800 hover:border-purple-400/40 transition duration-300 block w-full focus:outline-none group">
                 <div class="w-12 h-12 bg-purple-500/10 flex items-center justify-center rounded-xl text-purple-400 mb-6 group-hover:bg-purple-400 group-hover:text-caveDark transition duration-300">
                     <i class="fa-solid fa-share-nodes text-lg"></i>
                 </div>
@@ -205,7 +187,7 @@
         </div>
     </section>
 
-    <!-- Interactive Price Modals (Popups) -->
+    <!-- Price Modals (Popups) -->
     <!-- Web Development Modal -->
     <div id="web-modal" class="fixed inset-0 bg-caveDark/80 backdrop-blur-md z-50 hidden items-center justify-center p-4">
         <div class="bg-caveCard border border-gray-800 rounded-2xl p-6 md:p-8 max-w-md w-full relative">
@@ -249,8 +231,8 @@
     </div>
 
     <!-- Contact Us Section -->
-    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
-        <div class="glass-card p-10 md:p-14 rounded-3xl relative overflow-hidden">
+    <section id="contact" class="py-20 px-4 sm:px-6 max-w-4xl mx-auto text-center">
+        <div class="glass-card p-8 md:p-14 rounded-3xl relative overflow-hidden">
             <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-3">Contact Us</h2>
             <p class="text-gray-400 max-w-xl mx-auto mb-8 text-xs md:text-sm">
                 Get a completely custom digital platform tailored exactly to your business model. Contact us directly to review configurations.
@@ -268,18 +250,30 @@
 
     <!-- Footer -->
     <footer class="border-t border-gray-900 py-6 text-center text-[11px] text-gray-600">
-        <p>&copy; 2026 W/D™ Layouts. Modern • Fast • Secure • Scalable Architecture.</p>
+        <p>&copy; 2026 ዋሻ Digital™ Layouts. Modern • Fast • Secure • Scalable Architecture.</p>
     </footer>
 
-    <!-- Script Engines -->
+    <!-- Script Engines for Modals -->
     <script>
-        // Hamburger Toggle Engine
-        function toggleMenu() {
-            const menu = document.getElementById('side-menu');
-            const icon = document.getElementById('hamburger-icon');
-            if (menu.classList.contains('translate-x-full')) {
-                menu.classList.remove('translate-x-full');
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
-            } else {
-                menu.classList.add('translate-x-full');Normally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('bg-caveDark/80')) {
+                event.target.classList.remove('flex');
+                event.target.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
