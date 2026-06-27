@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washa Digital | High-Performance Web & Digital Services</title>
+    <title>W/D™ | Washa Digital Services</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for Icons -->
@@ -34,29 +34,50 @@
         }
     </style>
 </head>
-<body class="bg-caveDark text-gray-300 font-sans antialiased selection:bg-cyberBlue selection:text-caveDark">
+<body class="bg-caveDark text-gray-300 font-sans antialiased selection:bg-cyberBlue selection:text-caveDark relative overflow-x-hidden">
 
-    <!-- Basic Navbar -->
-    <header class="fixed top-0 w-full bg-caveDark/90 backdrop-blur-md border-b border-gray-900 z-50">
+    <!-- Header & Navbar Section -->
+    <header class="fixed top-0 w-full bg-caveDark/90 backdrop-blur-md border-b border-gray-900 z-40">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 bg-gradient-to-tr from-cyberBlue to-treasureGreen rounded-lg flex items-center justify-center text-caveDark font-black">W</div>
-                <span class="text-xl font-bold tracking-tight text-white">Washa <span class="text-cyberBlue">Digital</span></span>
+            <!-- Brand Identity & Logo Element -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-cyberBlue via-blue-600 to-treasureGreen rounded-xl flex items-center justify-center shadow-lg shadow-cyberBlue/10">
+                    <i class="fa-solid fa-code text-caveDark text-sm font-black"></i>
+                </div>
+                <span class="text-xl font-black tracking-tighter text-white uppercase">W/D<span class="text-cyberBlue text-xs font-bold tracking-normal lowercase p-0.5">™</span></span>
             </div>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
-                <a href="#home" class="hover:text-cyberBlue transition">Home</a>
-                <a href="#about" class="hover:text-cyberBlue transition">About Us</a>
-                <a href="#services" class="hover:text-cyberBlue transition">Services & Pricing</a>
-                <a href="#contact" class="hover:text-cyberBlue transition">Contact</a>
-            </nav>
-            <a href="https://t.me/your_telegram_username" target="_blank" class="bg-gradient-to-r from-cyberBlue to-blue-600 text-caveDark px-5 py-2 rounded-full text-sm font-bold transition shadow-md">
-                Get Started
-            </a>
+            
+            <!-- Hamburger Menu Button -->
+            <button onclick="toggleMenu()" class="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-900 border border-gray-800 text-white hover:text-cyberBlue transition focus:outline-none">
+                <i id="hamburger-icon" class="fa-solid fa-bars text-lg"></i>
+            </button>
         </div>
     </header>
 
-    <!-- Home / Hero Section -->
-    <section id="home" class="pt-40 pb-16 px-6 max-w-7xl mx-auto text-center relative">
+    <!-- Side Slide Hamburger Navigation Menu -->
+    <div id="side-menu" class="fixed top-0 right-0 h-full w-80 bg-gray-950/95 border-l border-gray-900 backdrop-blur-xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out p-8 flex flex-col justify-between">
+        <div>
+            <div class="flex justify-between items-center pb-8 border-b border-gray-900">
+                <span class="text-sm font-bold text-gray-500 uppercase tracking-widest">Navigation Menu</span>
+                <button onclick="toggleMenu()" class="text-gray-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <nav class="mt-8 flex flex-col space-y-6 text-lg font-bold text-white">
+                <a href="#home" onclick="toggleMenu()" class="hover:text-cyberBlue transition flex items-center"><i class="fa-solid fa-house w-8 text-sm text-gray-600"></i> Home</a>
+                <a href="#about" onclick="toggleMenu()" class="hover:text-cyberBlue transition flex items-center"><i class="fa-solid fa-circle-info w-8 text-sm text-gray-600"></i> About Us</a>
+                <a href="#services" onclick="toggleMenu()" class="hover:text-cyberBlue transition flex items-center"><i class="fa-solid fa-layer-group w-8 text-sm text-gray-600"></i> Services</a>
+                <a href="#services" onclick="toggleMenu()" class="hover:text-cyberBlue transition flex items-center"><i class="fa-solid fa-tags w-8 text-sm text-gray-600"></i> Pricing</a>
+                <a href="#contact" onclick="toggleMenu()" class="hover:text-cyberBlue transition flex items-center"><i class="fa-solid fa-paper-plane w-8 text-sm text-gray-600"></i> Contact Us</a>
+            </nav>
+        </div>
+        <div class="border-t border-gray-900 pt-6">
+            <a href="https://t.me/your_telegram_username" target="_blank" class="w-full bg-gray-900 border border-gray-800 py-3 rounded-xl block text-center font-bold text-sm text-cyberBlue hover:bg-gray-850 transition">
+                <i class="fa-brands fa-telegram mr-2"></i> Direct Telegram Chat
+            </a>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="pt-44 pb-16 px-6 max-w-7xl mx-auto text-center relative">
         <div class="absolute top-12 left-1/2 -translate-x-1/2 w-96 h-96 bg-cyberBlue/5 rounded-full blur-3xl pointer-events-none"></div>
         
         <p class="text-cyberBlue font-semibold uppercase tracking-widest text-xs mb-3">— Professional Solutions —</p>
@@ -68,7 +89,7 @@
             Modern Layout for Startups, Corporate Companies, and Premium Real Estate Brands.
         </p>
 
-        <!-- Dynamic Mockup Display Section with Nicer Custom Chart -->
+        <!-- Mockup Display Section with Redesigned Vector Chart -->
         <div class="mt-12 max-w-4xl mx-auto relative">
             <div class="relative bg-gradient-to-b from-gray-900 to-caveCard border border-gray-800 rounded-xl p-4 shadow-2xl glow-effect">
                 <div class="bg-caveDark/60 p-6 md:p-8 rounded-lg text-left border border-gray-800/40">
@@ -114,7 +135,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
                     <span class="text-xs text-treasureGreen font-bold tracking-widest uppercase block mb-2">// Behind the Cave</span>
-                    <h2 class="text-3xl font-extrabold text-white">About Washa Digital</h2>
+                    <h2 class="text-3xl font-extrabold text-white">About Us</h2>
                     <p class="text-gray-400 text-sm mt-4 leading-relaxed">
                         Like a cave ("ዋሻ"), we serve as a solid, deep, and secure foundation where businesses refine their models and uncover hidden strategies to dominate the online marketplace. 
                     </p>
@@ -144,10 +165,10 @@
         </div>
     </section>
 
-    <!-- Things I Offer / Services Section (Pressable to Show Prices) -->
+    <!-- Services & Pricing Section (Pressable to Show Prices) -->
     <section id="services" class="py-24 px-6 max-w-6xl mx-auto">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-extrabold text-white">Things We Offer</h2>
+            <h2 class="text-3xl font-extrabold text-white">Services & Pricing</h2>
             <p class="text-gray-500 text-sm mt-2">Click any core card below to view detailed deliverables and pricing frameworks instantly.</p>
         </div>
 
@@ -227,12 +248,12 @@
         </div>
     </div>
 
-    <!-- Contact Section -->
+    <!-- Contact Us Section -->
     <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
         <div class="glass-card p-10 md:p-14 rounded-3xl relative overflow-hidden">
-            <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-3">Unearth Your Hidden Growth</h2>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-3">Contact Us</h2>
             <p class="text-gray-400 max-w-xl mx-auto mb-8 text-xs md:text-sm">
-                Get a completely custom digital platform tailored exactly to your business model. Contact us directly to review setups.
+                Get a completely custom digital platform tailored exactly to your business model. Contact us directly to review configurations.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="https://t.me/your_telegram_username" target="_blank" class="w-full sm:w-auto bg-gradient-to-r from-cyberBlue to-blue-600 text-caveDark px-8 py-3.5 rounded-full font-bold text-sm transition text-center shadow-lg">
@@ -245,33 +266,20 @@
         </div>
     </section>
 
-    <!-- Simple Footer -->
+    <!-- Footer -->
     <footer class="border-t border-gray-900 py-6 text-center text-[11px] text-gray-600">
-        <p>&copy; 2026 Washa Digital. Modern • Fast • Secure • Scalable Architecture.</p>
+        <p>&copy; 2026 W/D™ Layouts. Modern • Fast • Secure • Scalable Architecture.</p>
     </footer>
 
-    <!-- Interactive JavaScript Engine -->
+    <!-- Script Engines -->
     <script>
-        function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            document.body.style.overflow = 'hidden';
-        }
-        function closeModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.classList.remove('flex');
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-        // Close modals if background clicked
-        window.onclick = function(event) {
-            if (event.target.classList.contains('bg-caveDark/80')) {
-                event.target.classList.remove('flex');
-                event.target.classList.add('hidden');
-                document.body.style.overflow = 'auto';
-            }
-        }
-    </script>
-</body>
-</html>
+        // Hamburger Toggle Engine
+        function toggleMenu() {
+            const menu = document.getElementById('side-menu');
+            const icon = document.getElementById('hamburger-icon');
+            if (menu.classList.contains('translate-x-full')) {
+                menu.classList.remove('translate-x-full');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.add('translate-x-full');Normally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
