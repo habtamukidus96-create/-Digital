@@ -24,268 +24,215 @@
     </script>
     <style>
         .glass-card {
-            background: rgba(19, 26, 44, 0.4);
+            background: rgba(19, 26, 44, 0.5);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.06);
         }
         .glow-effect {
             box-shadow: 0 0 35px rgba(0, 210, 255, 0.1);
-        }
-        /* Sleek custom animated pulse for the chart */
-        @keyframes growUp {
-            from { height: 0%; }
-        }
-        .chart-bar {
-            animation: growUp 1s ease-out forwards;
         }
     </style>
 </head>
 <body class="bg-caveDark text-gray-300 font-sans antialiased selection:bg-cyberBlue selection:text-caveDark">
 
-    <!-- Navbar Layout (Inspired by Screenshot_20260627-211149_Pinterest.jpg) -->
-    <header class="fixed top-0 w-full bg-caveDark/80 backdrop-blur-md border-b border-gray-900 z-50">
+    <!-- Basic Navbar -->
+    <header class="fixed top-0 w-full bg-caveDark/90 backdrop-blur-md border-b border-gray-900 z-50">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-2">
                 <div class="w-8 h-8 bg-gradient-to-tr from-cyberBlue to-treasureGreen rounded-lg flex items-center justify-center text-caveDark font-black">W</div>
                 <span class="text-xl font-bold tracking-tight text-white">Washa <span class="text-cyberBlue">Digital</span></span>
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
-                <a href="#services" class="hover:text-cyberBlue transition">Services</a>
-                <a href="#types" class="hover:text-cyberBlue transition">Web Types</a>
+                <a href="#home" class="hover:text-cyberBlue transition">Home</a>
+                <a href="#about" class="hover:text-cyberBlue transition">About Us</a>
+                <a href="#services" class="hover:text-cyberBlue transition">Services & Pricing</a>
                 <a href="#contact" class="hover:text-cyberBlue transition">Contact</a>
             </nav>
-            <a href="https://t.me/your_telegram_username" target="_blank" class="bg-gradient-to-r from-cyberBlue to-blue-600 hover:opacity-90 text-caveDark px-5 py-2.5 rounded-full text-sm font-bold transition shadow-lg shadow-cyberBlue/20">
-                Book a Call
+            <a href="https://t.me/your_telegram_username" target="_blank" class="bg-gradient-to-r from-cyberBlue to-blue-600 text-caveDark px-5 py-2 rounded-full text-sm font-bold transition shadow-md">
+                Get Started
             </a>
         </div>
     </header>
 
-    <!-- Hero Section Design (Inspired by Screenshot_20260627-211149_Pinterest.jpg) -->
-    <section class="pt-36 pb-16 px-6 max-w-7xl mx-auto text-center relative">
+    <!-- Home / Hero Section -->
+    <section id="home" class="pt-40 pb-16 px-6 max-w-7xl mx-auto text-center relative">
         <div class="absolute top-12 left-1/2 -translate-x-1/2 w-96 h-96 bg-cyberBlue/5 rounded-full blur-3xl pointer-events-none"></div>
         
-        <p class="text-cyberBlue font-semibold uppercase tracking-widest text-xs mb-3">— Professional —</p>
+        <p class="text-cyberBlue font-semibold uppercase tracking-widest text-xs mb-3">— Professional Solutions —</p>
         <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight max-w-4xl mx-auto leading-tight">
             High-Performance Web & <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyberBlue via-blue-400 to-treasureGreen">Digital Services</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyberBlue via-blue-400 to-treasureGreen">Digital Growth</span>
         </h1>
         <p class="mt-4 text-gray-400 max-w-xl mx-auto text-sm md:text-base">
-            Modern Layout for Startups, Companies, and Real Estate Agents.
+            Modern Layout for Startups, Corporate Companies, and Premium Real Estate Brands.
         </p>
 
-        <!-- Dynamic Mockup Display Section -->
-        <div class="mt-12 max-w-4xl mx-auto relative group">
-            <div class="absolute -inset-1 bg-gradient-to-r from-cyberBlue to-treasureGreen rounded-2xl blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
-            <!-- Interactive Studio Mockup Element -->
+        <!-- Dynamic Mockup Display Section with Nicer Custom Chart -->
+        <div class="mt-12 max-w-4xl mx-auto relative">
             <div class="relative bg-gradient-to-b from-gray-900 to-caveCard border border-gray-800 rounded-xl p-4 shadow-2xl glow-effect">
-                <div class="flex items-center space-x-2 border-b border-gray-800/60 pb-3 mb-4">
-                    <div class="w-3 h-3 bg-red-500/40 rounded-full"></div>
-                    <div class="w-3 h-3 bg-yellow-500/40 rounded-full"></div>
-                    <div class="w-3 h-3 bg-green-500/40 rounded-full"></div>
-                    <div class="h-4 w-40 bg-gray-950 rounded-md border border-gray-800/40 mx-auto"></div>
-                </div>
                 <div class="bg-caveDark/60 p-6 md:p-8 rounded-lg text-left border border-gray-800/40">
                     <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
                         <div class="md:col-span-3">
                             <span class="text-xs text-cyberBlue font-bold tracking-wider">@WashaDigital</span>
                             <h3 class="text-2xl md:text-3xl font-black text-white mt-1">Grow Your Business Online</h3>
                             <p class="text-gray-400 text-xs mt-2 leading-relaxed">We deliver innovative digital infrastructure that automatically captures leads and closes marketplace deals.</p>
-                            <div class="mt-4 flex space-x-3">
+                            <div class="mt-4">
                                 <span class="bg-treasureGreen/10 text-treasureGreen text-[10px] font-bold px-2.5 py-1 rounded border border-treasureGreen/20">+ 68% Conversion Rate</span>
                             </div>
                         </div>
                         
-                        <!-- Beautifully Redesigned Chart Element -->
-                        <div class="md:col-span-2 bg-gray-950/80 p-5 rounded-xl border border-gray-800/60 flex flex-col justify-between h-44 shadow-inner">
+                        <!-- Beautiful Vector Data Chart -->
+                        <div class="md:col-span-2 bg-gray-950 p-5 rounded-xl border border-gray-800 flex flex-col justify-between h-44 shadow-inner">
                             <div class="flex justify-between items-center mb-2">
                                 <div>
                                     <span class="text-[10px] text-gray-500 uppercase font-bold tracking-wider block">Lead Flow Velocity</span>
                                     <span class="text-lg font-extrabold text-white">4,812 <span class="text-xs text-treasureGreen font-medium">+12.4%</span></span>
                                 </div>
-                                <div class="w-7 h-7 rounded-full bg-gray-900 flex items-center justify-center border border-gray-800">
-                                    <i class="fa-solid fa-chart-simple text-cyberBlue text-xs"></i>
-                                </div>
+                                <i class="fa-solid fa-chart-simple text-cyberBlue text-sm"></i>
                             </div>
-                            <!-- Clean Vector Data Bars -->
-                            <div class="w-full h-20 flex items-end justify-between px-2 pt-2 border-b border-gray-800/60 relative">
-                                <div class="absolute inset-0 flex flex-col justify-between pointer-events-none opacity-20">
-                                    <div class="border-b border-gray-700 w-full h-0"></div>
-                                    <div class="border-b border-gray-700 w-full h-0"></div>
-                                    <div class="border-b border-gray-700 w-full h-0"></div>
-                                </div>
-                                <div class="chart-bar w-5 bg-gradient-to-t from-blue-900/40 to-blue-600/60 rounded-t-md" style="height: 45%;"></div>
-                                <div class="chart-bar w-5 bg-gradient-to-t from-blue-900/40 to-blue-500/70 rounded-t-md" style="height: 35%;"></div>
-                                <div class="chart-bar w-5 bg-gradient-to-t from-blue-900/40 to-blue-400/80 rounded-t-md" style="height: 60%;"></div>
-                                <div class="chart-bar w-5 bg-gradient-to-t from-cyberBlue/30 to-cyberBlue rounded-t-md" style="height: 75%;"></div>
-                                <div class="chart-bar w-5 bg-gradient-to-t from-treasureGreen/40 to-treasureGreen rounded-t-md" style="height: 95%;"></div>
+                            <div class="w-full h-20 flex items-end justify-between px-2 pt-2 border-b border-gray-800 relative">
+                                <div class="w-5 bg-gradient-to-t from-blue-900/40 to-blue-600/60 rounded-t-md" style="height: 45%;"></div>
+                                <div class="w-5 bg-gradient-to-t from-blue-900/40 to-blue-500/70 rounded-t-md" style="height: 35%;"></div>
+                                <div class="w-5 bg-gradient-to-t from-blue-900/40 to-blue-400/80 rounded-t-md" style="height: 60%;"></div>
+                                <div class="w-5 bg-gradient-to-t from-cyberBlue/30 to-cyberBlue rounded-t-md" style="height: 75%;"></div>
+                                <div class="w-5 bg-gradient-to-t from-treasureGreen/40 to-treasureGreen rounded-t-md" style="height: 95%;"></div>
                             </div>
-                            <div class="flex justify-between text-[9px] text-gray-600 px-1 mt-1 font-medium">
-                                <span>Wk 1</span>
-                                <span>Wk 2</span>
-                                <span>Wk 3</span>
-                                <span>Wk 4</span>
-                                <span>Active</span>
+                            <div class="flex justify-between text-[9px] text-gray-600 px-1 mt-1">
+                                <span>Wk 1</span><span>Wk 2</span><span>Wk 3</span><span>Wk 4</span><span>Active</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Floating Glassmorphic Quick Tabs Base Layout (From Screenshot_20260627-211149_Pinterest.jpg) -->
-        <div id="services" class="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto mt-8">
-            <div class="glass-card p-5 rounded-xl text-left hover:border-cyberBlue/30 transition duration-300">
-                <i class="fa-solid fa-code text-cyberBlue mb-2 text-base"></i>
-                <h4 class="text-white text-xs font-bold">Web Development</h4>
-                <div class="text-[10px] text-gray-500 mt-1">Custom & Responsive</div>
-            </div>
-            <div class="glass-card p-5 rounded-xl text-left hover:border-treasureGreen/30 transition duration-300">
-                <i class="fa-solid fa-bullseye text-treasureGreen mb-2 text-base"></i>
-                <h4 class="text-white text-xs font-bold">FB Ad Funnels</h4>
-                <div class="text-[10px] text-gray-500 mt-1">Targeted Lead Generation</div>
-            </div>
-            <div class="glass-card p-5 rounded-xl text-left hover:border-purple-400/30 transition duration-300">
-                <i class="fa-solid fa-share-nodes text-purple-400 mb-2 text-base"></i>
-                <h4 class="text-white text-xs font-bold">Social Strategy</h4>
-                <div class="text-[10px] text-gray-500 mt-1">Content Management</div>
-            </div>
-            <div class="glass-card p-5 rounded-xl text-left hover:border-yellow-400/30 transition duration-300">
-                <i class="fa-solid fa-square-poll-vertical text-yellow-400 mb-2 text-base"></i>
-                <h4 class="text-white text-xs font-bold">Results & Scaling</h4>
-                <div class="text-[10px] text-gray-500 mt-1">Data Analytics Insights</div>
-            </div>
-        </div>
     </section>
 
-    <!-- Popular Types of Web Pages Grid (Rebalanced from Screenshot_20260627-211405_Pinterest.jpg to fit Premium Theme) -->
-    <section id="types" class="py-24 bg-gray-950/40 border-t border-b border-gray-900 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-2xl md:text-3xl font-extrabold text-white">Popular Types of Web Pages We Build</h2>
-                <p class="text-gray-500 text-sm mt-2">Every business model requires unique architecture. Choose what matches your scaling objectives.</p>
-            </div>
-
-            <!-- Redesigned Grid Structure: Replaced bright card colors with sleek dark-glass architecture -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Homepage -->
-                <div class="glass-card p-6 rounded-2xl transition hover:border-gray-700 duration-300">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
-                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">Homepage</h3>
-                    </div>
-                    <ul class="space-y-2.5 text-xs text-gray-400 font-medium">
-                        <li><span class="text-gray-600 mr-1.5">•</span> Logo Configuration</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Custom Navigation Menu</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Hero & Featured Content</li>
-                    </ul>
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-950/50 border-t border-b border-gray-900 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs text-treasureGreen font-bold tracking-widest uppercase block mb-2">// Behind the Cave</span>
+                    <h2 class="text-3xl font-extrabold text-white">About Washa Digital</h2>
+                    <p class="text-gray-400 text-sm mt-4 leading-relaxed">
+                        Like a cave ("ዋሻ"), we serve as a solid, deep, and secure foundation where businesses refine their models and uncover hidden strategies to dominate the online marketplace. 
+                    </p>
+                    <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                        We blend software engineering precision with aggressive performance marketing frameworks to build systems that capture revenue around the clock.
+                    </p>
                 </div>
-                <!-- About Us -->
-                <div class="glass-card p-6 rounded-2xl transition hover:border-gray-700 duration-300">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-2 h-2 rounded-full bg-pink-400"></div>
-                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">About us</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-caveCard p-5 rounded-xl border border-gray-800 text-center">
+                        <div class="text-2xl font-black text-white">100%</div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-1">Responsive Design</div>
                     </div>
-                    <ul class="space-y-2.5 text-xs text-gray-400 font-medium">
-                        <li><span class="text-gray-600 mr-1.5">•</span> Company Information</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Team Members Block</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Narrative Brand Story</li>
-                    </ul>
-                </div>
-                <!-- Contact page -->
-                <div class="glass-card p-6 rounded-2xl transition hover:border-gray-700 duration-300">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-2 h-2 rounded-full bg-blue-400"></div>
-                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">Contact page</h3>
+                    <div class="bg-caveCard p-5 rounded-xl border border-gray-800 text-center">
+                        <div class="text-2xl font-black text-cyberBlue">24/7</div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-1">Automated Funnels</div>
                     </div>
-                    <ul class="space-y-2.5 text-xs text-gray-400 font-medium">
-                        <li><span class="text-gray-600 mr-1.5">•</span> Interactive Contact Form</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Phone Numbers & Links</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Integrated Location Map</li>
-                    </ul>
-                </div>
-                <!-- Portfolio page -->
-                <div class="glass-card p-6 rounded-2xl transition hover:border-gray-700 duration-300">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-2 h-2 rounded-full bg-amber-400"></div>
-                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">Portfolio page</h3>
+                    <div class="bg-caveCard p-5 rounded-xl border border-gray-800 text-center">
+                        <div class="text-2xl font-black text-treasureGreen">ROI</div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-1">Focused Strategy</div>
                     </div>
-                    <ul class="space-y-2.5 text-xs text-gray-400 font-medium">
-                        <li><span class="text-gray-600 mr-1.5">•</span> High-Res Project Images</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Scope & Descriptions</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Verified User Stories</li>
-                    </ul>
-                </div>
-                <!-- Blog -->
-                <div class="glass-card p-6 rounded-2xl transition hover:border-gray-700 duration-300">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-2 h-2 rounded-full bg-indigo-400"></div>
-                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">Blog</h3>
+                    <div class="bg-caveCard p-5 rounded-xl border border-gray-800 text-center">
+                        <div class="text-2xl font-black text-white">Direct</div>
+                        <div class="text-[10px] text-gray-500 tracking-wider mt-1">Telegram Flow</div>
                     </div>
-                    <ul class="space-y-2.5 text-xs text-gray-400 font-medium">
-                        <li><span class="text-gray-600 mr-1.5">•</span> Optimized Blog Posts</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Categorization Filters</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Social Sharing Shortcuts</li>
-                    </ul>
-                </div>
-                <!-- Product page -->
-                <div class="glass-card p-6 rounded-2xl transition hover:border-gray-700 duration-300">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-2 h-2 rounded-full bg-orange-400"></div>
-                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">Product page</h3>
-                    </div>
-                    <ul class="space-y-2.5 text-xs text-gray-400 font-medium">
-                        <li><span class="text-gray-600 mr-1.5">•</span> Crisp Product Galleries</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Clear Dynamic Pricing</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Instant Purchase Options</li>
-                    </ul>
-                </div>
-                <!-- Landing page -->
-                <div class="glass-card p-6 rounded-2xl transition hover:border-gray-700 duration-300">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-2 h-2 rounded-full bg-red-400"></div>
-                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">Landing page</h3>
-                    </div>
-                    <ul class="space-y-2.5 text-xs text-gray-400 font-medium">
-                        <li><span class="text-gray-600 mr-1.5">•</span> Explicit Call to Action</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Persuasive Sales Content</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Structured Lead Capture Form</li>
-                    </ul>
-                </div>
-                <!-- FAQ page -->
-                <div class="glass-card p-6 rounded-2xl transition hover:border-gray-700 duration-300">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-2 h-2 rounded-full bg-teal-400"></div>
-                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">FAQ page</h3>
-                    </div>
-                    <ul class="space-y-2.5 text-xs text-gray-400 font-medium">
-                        <li><span class="text-gray-600 mr-1.5">•</span> Common Client Questions</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Direct & Concise Answers</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Integrated Search Engine</li>
-                    </ul>
-                </div>
-                <!-- Testimonials page -->
-                <div class="glass-card p-6 rounded-2xl transition hover:border-gray-700 duration-300">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-2 h-2 rounded-full bg-sky-400"></div>
-                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">Testimonials page</h3>
-                    </div>
-                    <ul class="space-y-2.5 text-xs text-gray-400 font-medium">
-                        <li><span class="text-gray-600 mr-1.5">•</span> Raw Customer Reviews</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Star Ratings Component</li>
-                        <li><span class="text-gray-600 mr-1.5">•</span> Client Success Stories</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Bottom Call to Action Section -->
+    <!-- Things I Offer / Services Section (Pressable to Show Prices) -->
+    <section id="services" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-extrabold text-white">Things We Offer</h2>
+            <p class="text-gray-500 text-sm mt-2">Click any core card below to view detailed deliverables and pricing frameworks instantly.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Service Card 1 -->
+            <button onclick="openModal('web-modal')" class="glass-card p-8 rounded-2xl text-left border border-gray-800 hover:border-cyberBlue/40 transition duration-300 block w-full focus:outline-none group">
+                <div class="w-12 h-12 bg-cyberBlue/10 flex items-center justify-center rounded-xl text-cyberBlue mb-6 group-hover:bg-cyberBlue group-hover:text-caveDark transition duration-300">
+                    <i class="fa-solid fa-code text-lg"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Website Design & Dev</h3>
+                <p class="text-gray-400 text-xs leading-relaxed mb-4">Responsive layouts, mobile UI/UX optimization, landing pages, and business portfolios built for conversion.</p>
+                <span class="text-xs text-cyberBlue font-bold flex items-center">Click to View Price <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i></span>
+            </button>
+
+            <!-- Service Card 2 -->
+            <button onclick="openModal('ads-modal')" class="glass-card p-8 rounded-2xl text-left border border-gray-800 hover:border-treasureGreen/40 transition duration-300 block w-full focus:outline-none group">
+                <div class="w-12 h-12 bg-treasureGreen/10 flex items-center justify-center rounded-xl text-treasureGreen mb-6 group-hover:bg-treasureGreen group-hover:text-caveDark transition duration-300">
+                    <i class="fa-solid fa-rectangle-ad text-lg"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">FB Ad Boosting & Funnels</h3>
+                <p class="text-gray-400 text-xs leading-relaxed mb-4">Targeted campaign engineering, custom audience tracking, and low cost-per-lead landing funnels.</p>
+                <span class="text-xs text-treasureGreen font-bold flex items-center">Click to View Price <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i></span>
+            </button>
+
+            <!-- Service Card 3 -->
+            <button onclick="openModal('smm-modal')" class="glass-card p-8 rounded-2xl text-left border border-gray-800 hover:border-purple-400/40 transition duration-300 block w-full focus:outline-none group">
+                <div class="w-12 h-12 bg-purple-500/10 flex items-center justify-center rounded-xl text-purple-400 mb-6 group-hover:bg-purple-400 group-hover:text-caveDark transition duration-300">
+                    <i class="fa-solid fa-share-nodes text-lg"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Social Media Management</h3>
+                <p class="text-gray-400 text-xs leading-relaxed mb-4">Short-form vertical video (Reels) curation, copywriting, visual calendars, and brand page authority building.</p>
+                <span class="text-xs text-purple-400 font-bold flex items-center">Click to View Price <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Interactive Price Modals (Popups) -->
+    <!-- Web Development Modal -->
+    <div id="web-modal" class="fixed inset-0 bg-caveDark/80 backdrop-blur-md z-50 hidden items-center justify-center p-4">
+        <div class="bg-caveCard border border-gray-800 rounded-2xl p-6 md:p-8 max-w-md w-full relative">
+            <button onclick="closeModal('web-modal')" class="absolute top-4 right-4 text-gray-500 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+            <h4 class="text-xl font-bold text-white mb-2">Website Architecture Suite</h4>
+            <p class="text-xs text-gray-400 mb-6">Complete responsive site, interactive elements, custom UI configuration, and business lead funnels.</p>
+            <div class="bg-gray-950 p-4 rounded-xl border border-gray-800 mb-6 flex justify-between items-center">
+                <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Project Rate</span>
+                <span class="text-2xl font-black text-cyberBlue">Contact for Quote</span>
+            </div>
+            <a href="https://t.me/your_telegram_username" target="_blank" class="block w-full bg-cyberBlue text-caveDark text-center py-3 rounded-xl font-bold text-sm">Discuss Project Options</a>
+        </div>
+    </div>
+
+    <!-- Facebook Ads Modal -->
+    <div id="ads-modal" class="fixed inset-0 bg-caveDark/80 backdrop-blur-md z-50 hidden items-center justify-center p-4">
+        <div class="bg-caveCard border border-gray-800 rounded-2xl p-6 md:p-8 max-w-md w-full relative">
+            <button onclick="closeModal('ads-modal')" class="absolute top-4 right-4 text-gray-500 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+            <h4 class="text-xl font-bold text-white mb-2">FB / Meta Boosting System</h4>
+            <p class="text-xs text-gray-400 mb-6">Targeted campaign deployment, copy structure, monthly tracking setups, and audience data funnel management.</p>
+            <div class="bg-gray-950 p-4 rounded-xl border border-gray-800 mb-6 flex justify-between items-center">
+                <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Monthly Retainer</span>
+                <span class="text-2xl font-black text-treasureGreen">Contact for Quote</span>
+            </div>
+            <a href="https://t.me/your_telegram_username" target="_blank" class="block w-full bg-treasureGreen text-caveDark text-center py-3 rounded-xl font-bold text-sm">Deploy Ad Engine</a>
+        </div>
+    </div>
+
+    <!-- SMM Modal -->
+    <div id="smm-modal" class="fixed inset-0 bg-caveDark/80 backdrop-blur-md z-50 hidden items-center justify-center p-4">
+        <div class="bg-caveCard border border-gray-800 rounded-2xl p-6 md:p-8 max-w-md w-full relative">
+            <button onclick="closeModal('smm-modal')" class="absolute top-4 right-4 text-gray-500 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+            <h4 class="text-xl font-bold text-white mb-2">Social Media Blueprint</h4>
+            <p class="text-xs text-gray-400 mb-6">Short-form video engineering, asset scheduling, post design, and direct local platform optimization parameters.</p>
+            <div class="bg-gray-950 p-4 rounded-xl border border-gray-800 mb-6 flex justify-between items-center">
+                <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Monthly Scope</span>
+                <span class="text-2xl font-black text-purple-400">Contact for Quote</span>
+            </div>
+            <a href="https://t.me/your_telegram_username" target="_blank" class="block w-full bg-purple-400 text-caveDark text-center py-3 rounded-xl font-bold text-sm">Scale Your Brand</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
     <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
         <div class="glass-card p-10 md:p-14 rounded-3xl relative overflow-hidden">
             <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-3">Unearth Your Hidden Growth</h2>
             <p class="text-gray-400 max-w-xl mx-auto mb-8 text-xs md:text-sm">
-                Get a completely custom digital platform tailored exactly like your business needs. Contact us directly to review pricing and blueprints.
+                Get a completely custom digital platform tailored exactly to your business model. Contact us directly to review setups.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="https://t.me/your_telegram_username" target="_blank" class="w-full sm:w-auto bg-gradient-to-r from-cyberBlue to-blue-600 text-caveDark px-8 py-3.5 rounded-full font-bold text-sm transition text-center shadow-lg">
@@ -298,10 +245,33 @@
         </div>
     </section>
 
-    <!-- Simple Custom Footer Layout -->
+    <!-- Simple Footer -->
     <footer class="border-t border-gray-900 py-6 text-center text-[11px] text-gray-600">
         <p>&copy; 2026 Washa Digital. Modern • Fast • Secure • Scalable Architecture.</p>
     </footer>
 
+    <!-- Interactive JavaScript Engine -->
+    <script>
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        // Close modals if background clicked
+        window.onclick = function(event) {
+            if (event.target.classList.contains('bg-caveDark/80')) {
+                event.target.classList.remove('flex');
+                event.target.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
 </body>
 </html>
